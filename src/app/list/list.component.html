@@ -1,0 +1,22 @@
+<!--
+      指定子组件 title
+     isShowCreatButton  布尔值
+     出现 添加 按钮
+     [] 属性
+     （）事件
+ -->
+<app-common-header title="所有联系人" [isShowCreatButton]="true"></app-common-header>
+<ul class="list">
+  <li *ngFor="let contact of contacts">
+    <!--
+    父组件向子组件中传递数据：通过属性
+    父组件中使用子组件就是使用子组件的标签样式，将子组件的属性绑定到父组件属性上，就实现父组件向子组件传递数据
+    子组件向父组件传递数据：通过事件
+    子组件中定义事件，子组件的事件触发，引发父组件事件响应，同时将事件参数给父组件的响应函数，完成子组件向父组件传递参数
+    -->
+    <app-list-item [contact]="contact"
+    (routerNavigateEvent)="routerNavigate($event)"></app-list-item>
+    <!-- 通过 $event 接收参数-->
+  </li>
+</ul>
+<app-common-footer></app-common-footer>

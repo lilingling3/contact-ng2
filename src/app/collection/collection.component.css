@@ -1,0 +1,36 @@
+h3.no-collection{
+  position: absolute;
+  top:40%;
+  left: 50%;
+  transform: translate(-50% -50%);
+  font-size: 18px;
+}
+.my-collection{
+  position: absolute;
+  top:35px;
+  left: 0;
+  right: 0;
+  bottom: 40px;
+  padding: 0 15px;
+  overflow: scroll;
+}
+.my-collection li{
+  height: 50px;
+  border-bottom: 1px solid #e0e0e0;
+}
+.my-collection li a{
+  line-height: 30px;
+  display: block;
+  padding-top: 20px;
+  text-decoration: none;
+}
+.my-collection li a label{
+  width: 75px;
+  font-size: 16px;
+  color: #000000;
+  display: inline-block;
+}
+.my-collection li a span{
+  font-size: 16px;
+  color: #000000;
+}

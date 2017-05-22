@@ -1,0 +1,14 @@
+.list{
+  overflow: auto;
+  position: absolute;
+  top: 35px;
+  bottom: 35px;
+  left: 0;
+  right: 0;
+  z-index: 9;
+  background-color: #fafafa;
+  padding: 0 5px;
+}
+.list li:last-child{
+  border-bottom: none;
+}

@@ -1,0 +1,56 @@
+.operate{
+  padding: 20px 15px 0;
+}
+.operate li{
+  height: 50px;
+}
+.operate li label{
+  float: left;
+}
+.operate li p{
+  position: relative;
+  margin-left: 45px;
+}
+.operate li input[type=text]{
+  border: none;
+  border-bottom: 1px solid #e0e0e0;
+  outline: none;
+  width: 100%;
+}
+.operate li p i{
+  position: absolute;
+  top:0;
+  bottom: 0;
+  right: 0;
+  width: 5px;
+  background-color: #ffffff;
+}
+.operate li p i.green{
+  background-color: #3dd689;
+}
+.operate li p i.red{
+  background-color: red;
+}
+.operate .btn:after{
+  content: '';
+  display: table;
+  visibility: hidden;
+  clear: both;
+}
+.operate .btn button{
+  width: 45%;
+  height: 35px;
+  line-height: 35px;
+  font-size: 14px;
+  text-align: center;
+  border: 1px solid #e0e0e0;
+  display: inline-block;
+  background-color: #ffffff;
+  color: #000;
+}
+.f1{
+  float: left;
+}
+.fr{
+  float: right;
+}
